@@ -131,9 +131,46 @@ section .imagem img {
     align-items: center;
     justify-content: end;
 }
-.
+
 .gallery {
     overflow: hidden;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "milkbottles orange-fruta cone sugar-cubes";
+
+}
+
+.milkbottles {
+    grid-area: milkbottles;
+}
+
+.orange-fruta {
+    grid-area: orange-fruta;
+}
+
+.cone {
+    grid-area: cone;
+}
+
+.sugar-cubes {
+    grid-area: sugar-cubes;
+}
+
+
+
+
+footer {
+    background-color: #3EBFFF;
+    height: 42vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .attribution {
@@ -143,4 +180,13 @@ section .imagem img {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width:600px) {
+    .gallery {
+        flex-wrap: wrap;
+
+    }
+
+    .gallery img {}
 }
