@@ -183,9 +183,17 @@ footer {
 }
 
 @media screen and (max-width:600px) {
+    header{
+        background: url("images/mobile/image-header.jpg");
+        background-size: cover;
+    }
     .gallery {
-        flex-wrap: wrap;
-
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+        "milkbottles orange-fruta"
+        " cone sugar-cubes";
+        gap: 0px 0px;
     }
 
     .gallery img {}
