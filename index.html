@@ -20,15 +20,17 @@
 <body>
   <nav>
     <img class="logo" src="images/logo.svg" alt="">
-    <ul>
-      <li> About</li>
-      <li>Services</li>
-      <li> Projects</li>
-      <li id="contato"> Contact</li>
+    <ul id="topNav">
+      <li><a href=""> About</a></li>
+      <li><a href="">Services</a></li>
+      <li><a href="">Projects</a></li>
+      <li><a href="" id="contato">Contact</a></li>
     </ul>
+    <span onclick="menu()"><img src="images/icon-hamburger.svg" alt=""></span>
   </nav>
   <header>
     <h1> We are creatives</h1>
+    <img src="images/icon-arrow-down.svg" alt="">
   </header>
 
   <section>
@@ -40,16 +42,17 @@
           Engage your clients through <br> compelling visuals that do most of the marketing for you.</p>
         <a href="#">Learn more</a>
       </div>
-
-
     </div>
+
     <div class="imagem">
       <picture>
         <source media="(min-width: 375px)" srcset="images/mobile/image-transform.jpg">
         <img src="images/desktop/image-transform.jpg" alt="image-transform">
       </picture>
     </div>
+
   </section>
+
   <section>
     <div class="imagem">
       <picture>
@@ -62,11 +65,8 @@
         <h2>
           Stand out to the right audience
         </h2>
-        <p> Using a collaborative formula of designers, <br> researchers, photographers, videographers, and copywriters,
-          we’ll
-          <br>
-          build
-          and extend your brand in digital places.
+        <p> Using a collaborative formula of designers, <br> researchers, photographers, videographers, and
+          copywriters,we’ll<br>build and extend your brand in digital places.
         </p>
         <a href="#">Learn more</a>
       </div>
@@ -77,66 +77,76 @@
       <h3>Graphic design</h3>
       <p>
         Great design makes you memorable. We deliver <br> artwork that underscores your brand message <br> and captures
-        potential
-        clients’ attention.
+        potential clients’ attention.
       </p>
     </div>
     <div class="imagem img-fundo">
-
       <h3>Photography</h3>
       <p>
-
         Increase your credibility by getting the most <br> stunning, high-quality photos that improve your <br> business
         image.
       </p>
     </div>
   </section>
-
-
   <section class="client">
     <h2> Client testimonials</h2>
-
-    <div class="card">
-      <div class="card-reviwes">
+    <div class="cards">
+      <div class="card">
         <img src="images/image-emily.jpg" alt="">
         <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always
-          hit.
-          Emily R.</p>
+          hit.</p>
+        <p>Emily R.</p>
         <p>Marketing Director</p>
       </div>
-    </div>
-    <div class="card">
-      <img src="images/image-thomas.jpg" alt="">
-      Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable
-      experience.
-      Thomas S.
-      Chief Operating Officer
-    </div>
-    <div class="card">
-      <img src="images/image-jennie.jpg" alt="">
-      Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
-      Jennie F.
-      Business Owner
+      <div class="card">
+        <img src="images/image-thomas.jpg" alt="">
+        <p>
+          Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and
+          enjoyable experience.
+        </p>
+        <p>Thomas S.</p>
+        <p>
+          Chief Operating Officer
+        </p>
+      </div>
+      <div class="card">
+        <img src="images/image-jennie.jpg" alt="">
+        <p>
+          Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
+        </p>
+        <p>Jennie F.</p>
+        <p>
+          Business Owner
+        </p>
+      </div>
     </div>
 
   </section>
   <section class="gallery">
-    <picture>
-      <source media="(min-width:375px )" srcset="images/mobile/image-gallery-milkbottles.jpg">
-      <img src="images/desktop/image-gallery-milkbottles.jpg" alt="image-gallery-milkbottles">
-    </picture>
-    <picture>
-      <source media="(min-width:375px )" srcset="images/mobile/image-gallery-orange.jpg">
-      <img src="images/desktop/image-gallery-orange.jpg" alt="image-gallery-orange">
-    </picture>
-    <picture>
-      <source media="(min-width:375px )" srcset="images/mobile/image-gallery-cone.jpg">
-      <img src="images/desktop/image-gallery-cone.jpg" alt="image-gallery-cone">
-    </picture>
-    <picture>
-      <source media="(min-width:375px )" srcset="images/mobile/image-gallery-sugar-cubes.jpg">
-      <img src="images/desktop/image-gallery-sugar-cubes.jpg" alt="image-gallery-sugar-cubes">
-    </picture>
+    <div class="milkbottles">
+      <picture>
+        <source media="(min-width:375px )" srcset="images/mobile/image-gallery-milkbottles.jpg">
+        <img src="images/desktop/image-gallery-milkbottles.jpg" alt="image-gallery-milkbottles">
+      </picture>
+    </div>
+    <div class="orange-fruta">
+      <picture>
+        <source media="(min-width:375px )" srcset="images/mobile/image-gallery-orange.jpg">
+        <img src="images/desktop/image-gallery-orange.jpg" alt="image-gallery-orange">
+      </picture>
+    </div>
+    <div class="cone">
+      <picture>
+        <source media="(min-width:375px )" srcset="images/mobile/image-gallery-cone.jpg">
+        <img src="images/desktop/image-gallery-cone.jpg" alt="image-gallery-cone">
+      </picture>
+    </div>
+    <div class="sugar-cubes">
+      <picture>
+        <source media="(min-width:375px )" srcset="images/mobile/image-gallery-sugar-cubes.jpg">
+        <img src="images/desktop/image-gallery-sugar-cubes.jpg" alt="image-gallery-sugar-cubes">
+      </picture>
+    </div>
 
   </section>
   <footer>
