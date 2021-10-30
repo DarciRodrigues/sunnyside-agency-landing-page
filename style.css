@@ -1,12 +1,13 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 :root {
     --Softred: hsl(7, 99%, 70%);
     --Yellow: hsl(51, 100%, 49%);
-    --Darkdesaturatedcyan: hsl(167, 40%, 24%);
+    --Darkdesaturatedcyan: #25564b;
     --Darkblue: hsl(198, 62%, 26%);
     --Darkmoderatecya: hsl(168, 34%, 41%);
     --Verydarkdesaturatedblue: hsl(212, 27%, 19%);
@@ -16,7 +17,7 @@
     --White: hsl(0, 0%, 100%);
 }
 
-nav {
+.topnav {
     display: flex;
     background-color: #3EBFFF;
     width: 100%;
@@ -25,24 +26,21 @@ nav {
     justify-content: space-between;
     height: 62px;
     position: relative;
-}
 
-#topNav {
-    display: flex;
+
+}
+.topnav ul{
+display: flex;
     align-items: center;
     text-decoration: none;
     background-color: #3EBFFF;
-    list-style: none;
-}
-
-li {
-    
+    list-style: none;}
+.topnav ul li {
     margin-left: 8px;
     margin-right: 32px;
     font-family: 'Barlow', sans-serif;
-    
 }
-li a{
+.topnav ul li a {
     text-decoration: none;
     color: var(--White);
     font-weight: 600;
@@ -58,6 +56,14 @@ li a{
     justify-content: center;
     color: var(--Verydarkdesaturatedblue);
 }
+    
+*/
+/* Change the color of links on hover */
+.topnav ul li:hover {
+    background-color: #0f07f5;
+    
+}
+
 
 nav .logo {
     width: 100px;
@@ -67,7 +73,7 @@ nav .logo {
 
 span {
     display: none;
-    border: 1px solid black;
+   
 }
 
 header {
@@ -207,9 +213,18 @@ footer {
     background-color: #3EBFFF;
     height: 42vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
+}
+footer .logo-footer svg{
+    color: var(--Darkdesaturatedcyan);
+}
+footer ul{
+    list-style: none;
+    display: flex;
+    gap: 8px;
+    color: var(--Darkdesaturatedcyan);
 }
 
 .attribution {
@@ -222,42 +237,53 @@ footer {
 }
 
 @media screen and (max-width:600px) {
-    #topNav {
+span{
+    display: inline;
+}
+    .topnav ul {
+        display: none;
+    }
+
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive ul {
         display: flex;
         position: absolute;
-        top: 80px;
+        top: 68px;
         z-index: 10;
         flex-direction: column;
         width: 100%;
         align-items: stretch;
         height: 160px;
+
     }
-li{
-    width: 88vw;
-    background-color: var(--White);
-    padding: 8px 16px;
-    text-align: center;
-    color: var(--Verydarkgrayishblue);
-}
-li a{
 
-    color: var(--Darkmoderatecya);
-    font-weight: 600;
-    
-    font-size: 1em;
-}
-#contato {
-    display: flex;
-    background-color: var(--Yellow);
-    padding: 8px 16px;
-    border-radius: 25px;
-    align-items: center;
-    justify-content: center;
-    color: var(--Verydarkdesaturatedblue);
-}
+    .topnav.responsive ul li {
+        margin: 0 8px;
+        background-color: var(--White);
+        padding: 8px 16px;
+        text-align: center;
+        color: var(--Verydarkgrayishblue);
+    }
+    .topnav.responsive ul li a {
+text-decoration: none;
+        color: var(--Darkmoderatecya);
+        font-weight: 600;
 
-    span {
-        display: inline;
+        font-size: 1em;
+    }#contato {
+        display: flex;
+        background-color: var(--Yellow);
+        padding: 8px 16px;
+        border-radius: 25px;
+        align-items: center;
+        justify-content: center;
+        color: var(--Verydarkdesaturatedblue);
+    }
+    button {
+        display: block;
         border: 1px solid black;
     }
 
@@ -308,4 +334,5 @@ li a{
         margin-bottom: -4px;
 
     }
+
 }
