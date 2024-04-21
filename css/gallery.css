@@ -1,0 +1,9 @@
+.gallery {
+  overflow: hidden;
+  width: 100%;
+
+  display: flex;
+}
+.gallery .picture {
+  width: 25vw;
+}
